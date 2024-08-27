@@ -29,10 +29,10 @@ async def main():
 
     while True:
         try:
-            # Отправка сообщения "бе"
-            message = await client.send_message('me', 'бе')
+            # Отправка сообщения "test"
+            message = await client.send_message('me', 'test')
 
-            # Удаление отправленного сообщения "бе"
+            # Удаление отправленного сообщения "test"
             await client.delete_messages('me', [message])
 
             await asyncio.sleep(10)
